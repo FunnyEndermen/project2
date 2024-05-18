@@ -1,0 +1,226 @@
+body{
+    margin: 0;
+    background-color: #2e2e2e;
+}
+
+header{
+    height: 700px;
+    background-color: rgb(167, 167, 167);
+    border-radius: 60px;
+}
+.nav{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid white;
+}
+.nav ul{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    align-items: center;
+    padding: 0;
+}
+
+ul li{
+    text-align: center;
+    list-style: none;
+    margin: 0.8% auto;
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.25;
+    font-weight: 500;
+    cursor: pointer; cursor: hand;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.top{
+    display: flex;
+    width: 80%;
+}
+.left{
+    width: 60%;
+}
+.right{
+    width: 40%;
+    margin-left: 40%;
+}
+
+.slider{
+    display: flex;
+    overflow: hidden;
+    
+}
+.slide{
+    flex: 0 0 100%
+    
+}
+.slide img{
+    border-radius: 20px;
+    display: flex;
+    margin: 0.8% auto;
+}
+.btn_left{
+    margin: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    width: 50px;
+    height: 50px;
+    padding: 20px auto;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    background-color: #ffffff7d;
+}
+.btn_right{
+    right: 0;
+    margin: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    width: 50px;
+    height: 50px;
+    padding: 20px auto;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    background-color: #ffffff7d;
+}
+.p2{
+    font-size: 40px;
+    margin-left: 100px;
+}
+.p3{
+    font-size: 40px;
+    margin-left: 100px;
+    color: white;
+}
+.hits{
+    color: red;
+    font-size: 40px;
+    margin-left: 100px;
+}
+.h1{
+    padding-left: 10%;
+}
+.h1l{
+    padding-left: 10%;
+}
+    
+.lenta-container{
+    height: 500px;
+    width: 100%;
+    background-color: white;
+    border-radius: 50px;
+    margin: 15px;
+}
+
+.lenta-image{
+    margin: 30px auto;
+    border: 1px solid;
+    width: 80%;
+    overflow: hidden;
+}
+.lenta-image img{
+    width: 300px;
+    margin: 0 20px;
+    border-radius: 50px;
+}
+.lenta-image div{
+    display: flex;
+    width: 200%;
+    animation: image-lenta 5s linear infinite;
+}
+@keyframes image-lenta {
+    0%{
+        transform: translateX(0%) ;
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+
+.accordeon{
+    background-color: #717171;
+    color: black;
+    cursor: pointer;
+    padding:20px ;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 30px;
+}
+.accordeon-active, .accordeon:hover{
+    background-color: aliceblue;
+}
+.accordeon_panel{
+    padding: 0 20px;
+    background-color: azure;
+    overflow: hidden;
+    font-size: 30px;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+.accordeon:after{
+    content: "\2655";
+    font-size: 30px;
+    color: limegreen;
+    float: right;
+    margin-left: 5px;
+}
+
+.accordeon-active::after{
+    content: "\2659";
+}
+
+.hun1 h1{
+    font-size: 35px;
+    margin-right: 50%;
+    color: white;
+}
+
+.min1, .min2,.min3,.min4{
+    border: 1px solid white;
+    margin: 20px;
+    width: 25%;
+}
+
+.hun1 h1{
+    font-size: 35px;
+    margin-right: 50%;
+    color: white;
+}
+.min1 h1{
+    font-size: 12px;
+    color: white;
+}
+.min2 h2{
+    font-size: 12px;
+    color: white;
+}
+.min3 h3{
+    font-size: 13px;
+    color: white;
+}
+.min4 h4{
+    font-size: 12px;
+    color: white;
+}
+
+.divcenter{
+    margin-top: 100px;
+    position: relative;
+    justify-content: center;
+    padding: 10px;
+}
